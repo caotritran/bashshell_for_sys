@@ -1,6 +1,6 @@
 #/bin/bash
-#Author: AZDIGI CORPORATION
-#Script check change file to sync to Server Openvpn01
+#Author: tritran
+#Script check change file to sync to Server Openvpn02
 
 md5=`md5sum /etc/openvpn/easy-rsa/pki/index.txt | awk '{print $1}'`
 RSYNC_PASSWORD='password_here'
