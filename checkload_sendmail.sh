@@ -3,7 +3,7 @@
 #Author: tritran
 ### describe: Script will check load, if load average > 10 will execute tasks You want.
 ### simultaneously script will send mail to your email.
-recommend: Should install package `ssmtp` to increase mail reputation to inbox
+#recommend: Should install package `ssmtp` to increase mail reputation to inbox
 
 load_avg=`cat /proc/loadavg | awk '{print $1}'`
 #echo "$load_avg"
