@@ -15,7 +15,7 @@ if [ $b -ge $a ]; then
                 elif [ $(($i % 13)) -eq 0 ]; then
 					echo -n "xyz "
                 elif [ $(($i % 7)) -eq 0 ] && [ $(($i % 13)) -eq 0 ]; then
-					echo -n "abcxyz "
+					echo -n "a-z "
 				else
 					echo -n "$i "
                 fi
