@@ -1,7 +1,7 @@
 #/bin/bash
 #Author: AZDIGI Corporation
 
-options=("Create User" "Delete User" "Quit")
+options=("Create User" "Delete User" "List User" "Quit")
 
 # check file common client
 #IP=`hostname -I | awk '{print $1}'`
@@ -103,6 +103,10 @@ delete_user(){
 	echo "finished delete user"
 }
 
+list_user(){
+	ls /etc/openvpn/easy-rsa/pki/issued/ | awk -F. '{print $1}'
+}
+
 PS3="========================Welcome to script confing openvpn========================"
 PS3="Select options, Please: "
 select opt in "${options[@]}"
@@ -114,6 +118,10 @@ do
 		;;
 		"Delete User")
 		delete_user
+		break
+		;;
+		"List User")
+		list_user
 		break
 		;;
 		"Quit")
