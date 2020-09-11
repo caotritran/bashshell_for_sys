@@ -2,9 +2,9 @@
 
 ###
 #cat lists.txt
-#web1_data, web1_user, password1
-#web2_data, web2_user, password2
-#web3_data, web3_user, password3
+#web1_data | web1_user | password1
+#web2_data | web2_user | password2
+#web3_data | web3_user | password3
 ###
 
 input='lists.txt'
